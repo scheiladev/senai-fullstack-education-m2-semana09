@@ -1,0 +1,8 @@
+<app-header *ngIf="isAppPage"></app-header>
+
+<div class="app" [ngClass]="{ flex: isAppPage }">
+  <app-sidebar *ngIf="isAppPage"></app-sidebar>
+  <div class="full">
+    <router-outlet></router-outlet>
+  </div>
+</div>
