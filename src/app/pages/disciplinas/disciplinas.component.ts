@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from '../shared/components/header/header.component';
 
 @Component({
   selector: 'app-disciplinas',
   standalone: true,
-  imports: [RouterModule, HeaderComponent],
+  imports: [RouterModule],
   templateUrl: './disciplinas.component.html',
   styleUrl: './disciplinas.component.scss',
 })
