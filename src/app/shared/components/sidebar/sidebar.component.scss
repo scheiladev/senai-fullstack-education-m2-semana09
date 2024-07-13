@@ -5,3 +5,29 @@ aside {
   width: 250px;
   margin-right: 64px;
 }
+
+@media (max-width: 1024px) {
+  aside {
+    width: 200px;
+    margin-right: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 100%;
+    margin-right: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  aside {
+    button {
+      padding: 10px;
+    }
+  }
+}

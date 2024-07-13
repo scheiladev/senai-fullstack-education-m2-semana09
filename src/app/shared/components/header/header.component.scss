@@ -26,3 +26,14 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+
+    > img {
+      max-width: 250px;
+    }
+  }
+}
