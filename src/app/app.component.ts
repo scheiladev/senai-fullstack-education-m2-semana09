@@ -1,18 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { SharedModule } from './shared/shared.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, CommonModule, SidebarComponent],
+  imports: [RouterOutlet, CommonModule, SharedModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  isAppPage = true;
+  @Input() isAppPage = true;
 
   constructor(private router: Router) {
     this.router.events.subscribe((retorno) => {
