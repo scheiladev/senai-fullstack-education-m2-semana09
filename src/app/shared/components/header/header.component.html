@@ -1,8 +1,8 @@
 <header>
   <img src="/assets/logo-educatech-horizontal.svg" alt="EducaTech" />
   <div>
-    <p>{{ usuario }}</p>
-    <button type="button" (click)="sair()">
+    <button mat-button (click)="openDialog()">
+      <span>{{ usuario }}</span>
       <img src="/assets/profile.png" alt="Sair do sistema" />
     </button>
   </div>

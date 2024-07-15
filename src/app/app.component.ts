@@ -13,6 +13,12 @@ import { SharedModule } from './shared/shared.module';
 export class AppComponent {
   @Input() isAppPage = true;
 
+  modalSenha = {
+    titulo: 'Recuperação de senha',
+    mensagem:
+      'Uma mensagem com sua senha foi enviada para seu email de cadastro.',
+  };
+
   constructor(private router: Router) {
     this.router.events.subscribe((retorno) => {
       if (retorno instanceof NavigationEnd) {
