@@ -11,6 +11,10 @@
   --mdc-tab-indicator-active-indicator-color: #6a3ec4;
   --mat-tab-header-active-hover-indicator-color: #6a3ec4;
   --mat-tab-header-active-focus-indicator-color: #6a3ec4;
+  --mdc-filled-button-disabled-label-text-color: #6c6c6;
+  --mdc-filled-button-disabled-container-color: #cccccc;
+  --mdc-filled-text-field-container-color: #3e3e3e;
+  --mat-form-field-error-text-color: #f70063;
 }
 
 * {
@@ -36,10 +40,21 @@ ul li {
   cursor: pointer;
 }
 
-// .mat-mdc-unelevated-button:not(:disabled) {
-//   background-color: var(--mdc-filled-button-container-color);
-//   color: var();
-// }
+.mat-mdc-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mdc-button__label {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #000000;
+}
 
 html,
 body {

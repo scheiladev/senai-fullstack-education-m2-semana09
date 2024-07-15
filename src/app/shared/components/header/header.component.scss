@@ -16,13 +16,8 @@ header {
     display: flex;
     align-items: center;
     gap: 16px;
-    button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      img {
-        width: 48px;
-      }
+    img {
+      width: 48px;
     }
   }
 }

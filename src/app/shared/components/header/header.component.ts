@@ -14,11 +14,6 @@ export class HeaderComponent {
   readonly dialog = inject(MatDialog);
   usuario = this.loginService.usuarioLogado?.email || '';
 
-  modalSair = {
-    titulo: 'Sair do sistema',
-    mensagem: 'Deseja mesmo sair do sistema?',
-  };
-
   constructor(private loginService: LoginService) {}
 
   openDialog() {

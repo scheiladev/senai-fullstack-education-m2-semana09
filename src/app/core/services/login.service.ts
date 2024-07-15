@@ -26,7 +26,6 @@ export class LoginService {
         'usuarioLogado',
         JSON.stringify(this.usuarioLogado)
       );
-      window.alert('Usuário logado com sucesso!');
       return true;
     } else {
       window.alert('Usuário ou senha incorretos!');
